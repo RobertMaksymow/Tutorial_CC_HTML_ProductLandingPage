@@ -39,13 +39,25 @@
             <p class="info"><strong class="caps">Release on 5/27</strong></p>
           </strong>
         </div>
-        <img
-          src="./assets/desktop/image-keyboard.jpg"
-          alt="mechanical keyboard"
-          class="hero-image"
-          width="1080"
-          height="960"
-        />
+
+        <picture  class="hero-image">
+          <source
+            media="(width >= 75em)"
+            srcset="./assets/desktop/image-keyboard.jpg"
+          />
+          <source
+            media="(width >= 43.75em)"
+            srcset="./assets/tablet/image-keyboard.jpg"
+          />
+
+          <img
+            src="./assets/mobile/image-keyboard.jpg"
+            alt="mechanical keyboard"
+           
+            width="1080"
+            height="960"
+          />
+        </picture>
 
         <div class="gray-block"></div>
       </section>
